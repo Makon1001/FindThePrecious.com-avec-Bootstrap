@@ -1,0 +1,102 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+.commentaireTitre {
+  font-size: 0.5em;
+}
+
+.border-top {
+  margin-top: 15px;
+}
+
+.contener {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* ############# carte de la section Fellows ####### */
+.fellow-button {
+  margin-left: 5px;
+}
+
+.cards {
+  width: 300px;
+  position: relative;
+}
+
+.cards img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.reward {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 270px;
+  background-color: rgba(220, 220, 220, 0.9);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.price_reward {
+  color: #FF5900;
+}
+
+.cards .pict:hover .reward {
+  display: none;
+}
+
+.cards h2 {
+  width: 299px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #EEEEEE;
+  transition: 0.5s;
+  font-size: 3em;
+}
+
+.cards .pict:hover h2 {
+  top: 80%;
+  font-size: 1em;
+}
+
+.cards .pict:hover {
+  opacity: 1;
+}
+
+.dead .statut {
+  display: none;
+  width: 299px;
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  color: #C82121;
+  transition: 0.5s;
+  font-size: 5em;
+  font-family: 'Creepster', cursive;
+  transition: 0.3s;
+}
+
+.dead:hover .statut {
+  display: block;
+  transform: rotate(-45deg);
+}
+
+/* Quote */
+.cardQuote {
+  margin-top: 15px;
+}
+
+.contact {
+  width: 80%;
+}
