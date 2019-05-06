@@ -1,0 +1,27 @@
+$orange : #EF5D36;
+$jaune : #FACB48;
+$gris : #3D3D3D;
+
+@mixin ring ($size, $color){
+  width: $size;
+  height: $size;
+  border: solid $color $size/15 ;
+  border-radius: 50%;
+  box-shadow : $size/20 $size/20 $size/25 darken($color, 20);
+}
+
+.ring {
+  @include ring(50px, $orange);
+}
+
+.theOne {
+  @include ring(150px, $jaune );
+}
+
+@for $i from 1 through 6 {
+  .ring-#{$i} {
+    @include ring(25px * $i , $gris);
+    margin-right: -((35px * (1+($i/2)))*0.35);
+  }
+}
+
